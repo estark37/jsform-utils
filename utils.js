@@ -190,10 +190,10 @@ $.fn.draggify = function () {
             if (typeof(opts.submit_on_drag) === 'undefined') {
                 opts.submit_on_drag = false;
             }
-            if (typeof(opts.drag_enter) === 'function') {
+            if (typeof(opts.drag_enter) === 'undefined') {
                 opts.drag_enter = default_drag_event;
             }
-            if (typeof(opts.drag_over) === 'function') {
+            if (typeof(opts.drag_over) === 'undefined') {
                 opts.drag_over = default_drag_event;
             }
 
